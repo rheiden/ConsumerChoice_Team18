@@ -44,9 +44,10 @@ Partial Class frmTeam18CarInfo
         '
         Me.btnTeam18ExitCarInfo.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTeam18ExitCarInfo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnTeam18ExitCarInfo.Location = New System.Drawing.Point(23, 360)
+        Me.btnTeam18ExitCarInfo.Location = New System.Drawing.Point(46, 692)
+        Me.btnTeam18ExitCarInfo.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnTeam18ExitCarInfo.Name = "btnTeam18ExitCarInfo"
-        Me.btnTeam18ExitCarInfo.Size = New System.Drawing.Size(75, 34)
+        Me.btnTeam18ExitCarInfo.Size = New System.Drawing.Size(150, 65)
         Me.btnTeam18ExitCarInfo.TabIndex = 15
         Me.btnTeam18ExitCarInfo.Text = "Exit"
         Me.btnTeam18ExitCarInfo.UseVisualStyleBackColor = True
@@ -55,9 +56,10 @@ Partial Class frmTeam18CarInfo
         '
         Me.btnTeam18ConfirmInfo.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTeam18ConfirmInfo.ForeColor = System.Drawing.Color.DarkGreen
-        Me.btnTeam18ConfirmInfo.Location = New System.Drawing.Point(220, 360)
+        Me.btnTeam18ConfirmInfo.Location = New System.Drawing.Point(440, 692)
+        Me.btnTeam18ConfirmInfo.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnTeam18ConfirmInfo.Name = "btnTeam18ConfirmInfo"
-        Me.btnTeam18ConfirmInfo.Size = New System.Drawing.Size(75, 34)
+        Me.btnTeam18ConfirmInfo.Size = New System.Drawing.Size(150, 65)
         Me.btnTeam18ConfirmInfo.TabIndex = 14
         Me.btnTeam18ConfirmInfo.Text = "Confirm"
         Me.btnTeam18ConfirmInfo.UseVisualStyleBackColor = True
@@ -66,9 +68,10 @@ Partial Class frmTeam18CarInfo
         '
         Me.btnTeam18GoBackCarInfo.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTeam18GoBackCarInfo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnTeam18GoBackCarInfo.Location = New System.Drawing.Point(11, 14)
+        Me.btnTeam18GoBackCarInfo.Location = New System.Drawing.Point(22, 27)
+        Me.btnTeam18GoBackCarInfo.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnTeam18GoBackCarInfo.Name = "btnTeam18GoBackCarInfo"
-        Me.btnTeam18GoBackCarInfo.Size = New System.Drawing.Size(87, 34)
+        Me.btnTeam18GoBackCarInfo.Size = New System.Drawing.Size(174, 65)
         Me.btnTeam18GoBackCarInfo.TabIndex = 13
         Me.btnTeam18GoBackCarInfo.Text = "<--- Go Back"
         Me.btnTeam18GoBackCarInfo.UseVisualStyleBackColor = True
@@ -88,7 +91,8 @@ Partial Class frmTeam18CarInfo
         Me.TableLayoutPanel1.Controls.Add(Me.lblTeam18Transmission, 0, 2)
         Me.TableLayoutPanel1.Controls.Add(Me.lblTeam18Model, 0, 4)
         Me.TableLayoutPanel1.Controls.Add(Me.cbxTeam18UsedNew, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(65, 94)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(130, 181)
+        Me.TableLayoutPanel1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 5
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
@@ -96,15 +100,16 @@ Partial Class frmTeam18CarInfo
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(346, 207)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(692, 398)
         Me.TableLayoutPanel1.TabIndex = 12
         '
         'txtTeam18FuelEfficiency
         '
         Me.txtTeam18FuelEfficiency.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.txtTeam18FuelEfficiency.Location = New System.Drawing.Point(176, 133)
+        Me.txtTeam18FuelEfficiency.Location = New System.Drawing.Point(352, 261)
+        Me.txtTeam18FuelEfficiency.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.txtTeam18FuelEfficiency.Name = "txtTeam18FuelEfficiency"
-        Me.txtTeam18FuelEfficiency.Size = New System.Drawing.Size(121, 20)
+        Me.txtTeam18FuelEfficiency.Size = New System.Drawing.Size(238, 31)
         Me.txtTeam18FuelEfficiency.TabIndex = 8
         '
         'cbxTeam18Model
@@ -112,9 +117,10 @@ Partial Class frmTeam18CarInfo
         Me.cbxTeam18Model.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.cbxTeam18Model.FormattingEnabled = True
         Me.cbxTeam18Model.Items.AddRange(New Object() {"Sedan", "SUV", "Sports", "Truck"})
-        Me.cbxTeam18Model.Location = New System.Drawing.Point(176, 175)
+        Me.cbxTeam18Model.Location = New System.Drawing.Point(352, 340)
+        Me.cbxTeam18Model.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.cbxTeam18Model.Name = "cbxTeam18Model"
-        Me.cbxTeam18Model.Size = New System.Drawing.Size(121, 21)
+        Me.cbxTeam18Model.Size = New System.Drawing.Size(238, 33)
         Me.cbxTeam18Model.TabIndex = 11
         '
         'cbxTeam18Transmission
@@ -122,9 +128,10 @@ Partial Class frmTeam18CarInfo
         Me.cbxTeam18Transmission.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.cbxTeam18Transmission.FormattingEnabled = True
         Me.cbxTeam18Transmission.Items.AddRange(New Object() {"5-Speed", "6-Speed", "Automatic"})
-        Me.cbxTeam18Transmission.Location = New System.Drawing.Point(176, 92)
+        Me.cbxTeam18Transmission.Location = New System.Drawing.Point(352, 181)
+        Me.cbxTeam18Transmission.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.cbxTeam18Transmission.Name = "cbxTeam18Transmission"
-        Me.cbxTeam18Transmission.Size = New System.Drawing.Size(121, 21)
+        Me.cbxTeam18Transmission.Size = New System.Drawing.Size(238, 33)
         Me.cbxTeam18Transmission.TabIndex = 9
         '
         'cbxTeam18Engine
@@ -132,9 +139,10 @@ Partial Class frmTeam18CarInfo
         Me.cbxTeam18Engine.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.cbxTeam18Engine.FormattingEnabled = True
         Me.cbxTeam18Engine.Items.AddRange(New Object() {"Gas", "Hybrid", "Electric"})
-        Me.cbxTeam18Engine.Location = New System.Drawing.Point(176, 51)
+        Me.cbxTeam18Engine.Location = New System.Drawing.Point(352, 102)
+        Me.cbxTeam18Engine.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.cbxTeam18Engine.Name = "cbxTeam18Engine"
-        Me.cbxTeam18Engine.Size = New System.Drawing.Size(121, 21)
+        Me.cbxTeam18Engine.Size = New System.Drawing.Size(238, 33)
         Me.cbxTeam18Engine.TabIndex = 8
         '
         'lblTeam18UsedNew
@@ -142,9 +150,10 @@ Partial Class frmTeam18CarInfo
         Me.lblTeam18UsedNew.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.lblTeam18UsedNew.AutoSize = True
         Me.lblTeam18UsedNew.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTeam18UsedNew.Location = New System.Drawing.Point(97, 13)
+        Me.lblTeam18UsedNew.Location = New System.Drawing.Point(198, 23)
+        Me.lblTeam18UsedNew.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblTeam18UsedNew.Name = "lblTeam18UsedNew"
-        Me.lblTeam18UsedNew.Size = New System.Drawing.Size(73, 15)
+        Me.lblTeam18UsedNew.Size = New System.Drawing.Size(142, 32)
         Me.lblTeam18UsedNew.TabIndex = 2
         Me.lblTeam18UsedNew.Text = "Used/New: "
         '
@@ -153,9 +162,10 @@ Partial Class frmTeam18CarInfo
         Me.lblTeam18Fuel.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.lblTeam18Fuel.AutoSize = True
         Me.lblTeam18Fuel.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTeam18Fuel.Location = New System.Drawing.Point(80, 136)
+        Me.lblTeam18Fuel.Location = New System.Drawing.Point(160, 260)
+        Me.lblTeam18Fuel.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblTeam18Fuel.Name = "lblTeam18Fuel"
-        Me.lblTeam18Fuel.Size = New System.Drawing.Size(90, 15)
+        Me.lblTeam18Fuel.Size = New System.Drawing.Size(180, 32)
         Me.lblTeam18Fuel.TabIndex = 5
         Me.lblTeam18Fuel.Text = "Fuel Efficiency: "
         '
@@ -164,9 +174,10 @@ Partial Class frmTeam18CarInfo
         Me.lblTeam18Engine.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.lblTeam18Engine.AutoSize = True
         Me.lblTeam18Engine.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTeam18Engine.Location = New System.Drawing.Point(120, 54)
+        Me.lblTeam18Engine.Location = New System.Drawing.Point(240, 102)
+        Me.lblTeam18Engine.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblTeam18Engine.Name = "lblTeam18Engine"
-        Me.lblTeam18Engine.Size = New System.Drawing.Size(50, 15)
+        Me.lblTeam18Engine.Size = New System.Drawing.Size(100, 32)
         Me.lblTeam18Engine.TabIndex = 3
         Me.lblTeam18Engine.Text = "Engine: "
         '
@@ -175,9 +186,10 @@ Partial Class frmTeam18CarInfo
         Me.lblTeam18Transmission.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.lblTeam18Transmission.AutoSize = True
         Me.lblTeam18Transmission.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTeam18Transmission.Location = New System.Drawing.Point(87, 95)
+        Me.lblTeam18Transmission.Location = New System.Drawing.Point(174, 181)
+        Me.lblTeam18Transmission.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblTeam18Transmission.Name = "lblTeam18Transmission"
-        Me.lblTeam18Transmission.Size = New System.Drawing.Size(83, 15)
+        Me.lblTeam18Transmission.Size = New System.Drawing.Size(166, 32)
         Me.lblTeam18Transmission.TabIndex = 4
         Me.lblTeam18Transmission.Text = "Transmission: "
         '
@@ -186,9 +198,10 @@ Partial Class frmTeam18CarInfo
         Me.lblTeam18Model.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.lblTeam18Model.AutoSize = True
         Me.lblTeam18Model.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTeam18Model.Location = New System.Drawing.Point(100, 178)
+        Me.lblTeam18Model.Location = New System.Drawing.Point(200, 341)
+        Me.lblTeam18Model.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblTeam18Model.Name = "lblTeam18Model"
-        Me.lblTeam18Model.Size = New System.Drawing.Size(70, 15)
+        Me.lblTeam18Model.Size = New System.Drawing.Size(140, 32)
         Me.lblTeam18Model.TabIndex = 6
         Me.lblTeam18Model.Text = "Body Type: "
         '
@@ -197,32 +210,35 @@ Partial Class frmTeam18CarInfo
         Me.cbxTeam18UsedNew.Anchor = System.Windows.Forms.AnchorStyles.Left
         Me.cbxTeam18UsedNew.FormattingEnabled = True
         Me.cbxTeam18UsedNew.Items.AddRange(New Object() {"Used", "New"})
-        Me.cbxTeam18UsedNew.Location = New System.Drawing.Point(176, 10)
+        Me.cbxTeam18UsedNew.Location = New System.Drawing.Point(352, 23)
+        Me.cbxTeam18UsedNew.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.cbxTeam18UsedNew.Name = "cbxTeam18UsedNew"
-        Me.cbxTeam18UsedNew.Size = New System.Drawing.Size(121, 21)
+        Me.cbxTeam18UsedNew.Size = New System.Drawing.Size(238, 33)
         Me.cbxTeam18UsedNew.TabIndex = 7
         '
         'lblTeam18TitleCarInfo
         '
         Me.lblTeam18TitleCarInfo.AutoSize = True
         Me.lblTeam18TitleCarInfo.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTeam18TitleCarInfo.Location = New System.Drawing.Point(110, 21)
+        Me.lblTeam18TitleCarInfo.Location = New System.Drawing.Point(220, 40)
+        Me.lblTeam18TitleCarInfo.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblTeam18TitleCarInfo.Name = "lblTeam18TitleCarInfo"
-        Me.lblTeam18TitleCarInfo.Size = New System.Drawing.Size(283, 19)
+        Me.lblTeam18TitleCarInfo.Size = New System.Drawing.Size(550, 39)
         Me.lblTeam18TitleCarInfo.TabIndex = 11
         Me.lblTeam18TitleCarInfo.Text = "Please Enter the Following Information: "
         '
         'frmTeam18CarInfo
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(495, 404)
+        Me.ClientSize = New System.Drawing.Size(990, 777)
         Me.Controls.Add(Me.btnTeam18ExitCarInfo)
         Me.Controls.Add(Me.btnTeam18ConfirmInfo)
         Me.Controls.Add(Me.btnTeam18GoBackCarInfo)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.lblTeam18TitleCarInfo)
+        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.Name = "frmTeam18CarInfo"
         Me.Text = "Car Information"
         Me.TableLayoutPanel1.ResumeLayout(False)

@@ -84,10 +84,22 @@
     <Compile Include="CarInfoForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="CarInfoHelp.Designer.vb">
+      <DependentUpon>CarInfoHelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CarInfoHelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CreateAccountForm.Designer.vb">
       <DependentUpon>CreateAccountForm.vb</DependentUpon>
     </Compile>
     <Compile Include="CreateAccountForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAccountHelp.Designer.vb">
+      <DependentUpon>CreateAccountHelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAccountHelp.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DataBase.vb" />
@@ -104,6 +116,12 @@
     </Compile>
     <Compile Include="LoginForm.Designer.vb">
       <DependentUpon>LoginForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginHelp.Designer.vb">
+      <DependentUpon>LoginHelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginHelp.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -135,14 +153,23 @@
     <EmbeddedResource Include="CarInfoForm.resx">
       <DependentUpon>CarInfoForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CarInfoHelp.resx">
+      <DependentUpon>CarInfoHelp.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateAccountForm.resx">
       <DependentUpon>CreateAccountForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAccountHelp.resx">
+      <DependentUpon>CreateAccountHelp.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeveloperForm.resx">
       <DependentUpon>DeveloperForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginHelp.resx">
+      <DependentUpon>LoginHelp.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
