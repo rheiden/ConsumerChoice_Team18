@@ -121,7 +121,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="myCar.vb" />
+    <Compile Include="NewSP19_ProjectDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NewSP19_ProjectDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ObjectCreator.vb" />
     <Compile Include="Optimization.vb" />
     <Compile Include="Solution.Designer.vb">
@@ -165,6 +169,22 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="NewSP19_ProjectDataSet.xsc">
+      <DependentUpon>NewSP19_ProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NewSP19_ProjectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NewSP19_ProjectDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NewSP19_ProjectDataSet.xss">
+      <DependentUpon>NewSP19_ProjectDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NewSP19_Project.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
