@@ -48,6 +48,10 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Solver.Foundation, Version=3.0.2.10889, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>R:\Microsoft.Solver.Foundation\v4.0_3.0.2.10889__31bf3856ad364e35\Microsoft.Solver.Foundation.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -73,6 +77,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Car.vb" />
     <Compile Include="CarInfoForm.Designer.vb">
       <DependentUpon>CarInfoForm.vb</DependentUpon>
     </Compile>
@@ -85,12 +90,15 @@
     <Compile Include="CreateAccountForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DataBase.vb" />
     <Compile Include="DeveloperForm.Designer.vb">
       <DependentUpon>DeveloperForm.vb</DependentUpon>
     </Compile>
     <Compile Include="DeveloperForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Goal.vb" />
+    <Compile Include="Login.vb" />
     <Compile Include="LoginForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +121,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="myCar.vb" />
+    <Compile Include="ObjectCreator.vb" />
+    <Compile Include="Optimization.vb" />
+    <Compile Include="Solution.Designer.vb">
+      <DependentUpon>Solution.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Solution.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CarInfoForm.resx">
@@ -132,6 +149,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solution.resx">
+      <DependentUpon>Solution.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
