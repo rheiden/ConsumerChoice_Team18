@@ -18,4 +18,8 @@
         Team18Optimization.BuildModel()
         Team18Optimization.RunModel()
     End Sub
+
+    Private Sub frmTeam18CarInfo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
