@@ -7,9 +7,8 @@
     End Sub
 
     Private Sub btnTeam18Login_Click(sender As Object, e As EventArgs) Handles btnTeam18Login.Click
-        Me.Close()
+        Me.Hide()
         frmTeam18CarInfo.Show()
-
     End Sub
 
     Private Sub btnTeam18ExitWelcome_Click(sender As Object, e As EventArgs) Handles btnTeam18ExitWelcome.Click
@@ -17,7 +16,7 @@
     End Sub
 
     Private Sub btnTeam18CreateAccountWelcome_Click(sender As Object, e As EventArgs) Handles btnTeam18CreateAccountWelcome.Click
-        Me.Close()
+        Me.Hide()
         frmTeam18CreateAccount.Show()
     End Sub
     '**************************************************************************************************************************

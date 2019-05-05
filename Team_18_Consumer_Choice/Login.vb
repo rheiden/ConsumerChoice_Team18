@@ -2,7 +2,7 @@
 
 Public Class Login
 
-    Public Shared Property LoginList As List(Of Login) 'Team 18 creates a shared list of Login objects
+    Public Shared Property LoginList As New List(Of Login) 'Team 18 creates a shared list of Login objects
 
     'Team 18 Creates the instance properties of the Login class
     Public Property ID As Long 'Team 18 a number that is specific to each Login object

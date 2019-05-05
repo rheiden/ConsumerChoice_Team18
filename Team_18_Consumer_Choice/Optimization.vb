@@ -21,7 +21,7 @@ Public Class Optimization
 
         'Team18: Defines car decision variables
         For Each myCar As Car In Car.CarList
-            dvKey = "Car Choice" & myCar.Make & myCar.Model                     'Team18: sets the name of the decision variables
+            dvKey = "Car Choice " & myCar.Make & myCar.Model                     'Team18: sets the name of the decision variables
             Team18Solver.AddVariable(dvKey, dvIndex)                            'Team18: adds the variable to solver
             Team18Solver.SetBounds(dvIndex, 0, 1)                               'Team18: sets the bounds for the variable (binary)
             Team18Solver.SetIntegrality(dvIndex, True)                          'Team18: constrains the bounds to whole numbers 
@@ -43,7 +43,7 @@ Public Class Optimization
         Team18Solver.AddRow(constraintKey, constraintIndex)                     'Team18: adds the row to solver
         Team18Solver.SetBounds(constraintIndex, 1, 1)                           'Team18: sets the bounds for the constraint (must be 1)
         For Each myCar As Car In Car.CarList
-            dvIndex = Team18Solver.GetIndexFromKey(myCar.Make & myCar.Model)    'Team18: sets the index of the DV 
+            dvIndex = Team18Solver.GetIndexFromKey("Car Choice " & myCar.Make & myCar.Model)    'Team18: sets the index of the DV 
             coefficient = 1                                                     'Team18: sets the coefficient of the constraint
             Team18Solver.SetCoefficient(constraintIndex, dvIndex, coefficient)  'Team18: inputs coefficient of constraint to solver
         Next
