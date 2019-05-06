@@ -8,6 +8,7 @@ Public Class Login
     Public Property ID As Long 'Team 18 a number that is specific to each Login object
     Public Property UserName As String 'Team 18 the name of the user that is asoociated with a specific instance of the Handling class
     Public Property Password As String 'Team 18 is the password of the user that is associated with this Login object
+    Public Property Budget As Single    'Team 18: the budget associated with each customer
 
     'Team 18 Creates the constructor for the Handling class
     Public Sub New()
