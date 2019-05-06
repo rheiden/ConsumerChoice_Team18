@@ -82,6 +82,7 @@ Partial Class frmTeam18Login
         '
         Me.txtTeam18Password.Location = New System.Drawing.Point(112, 118)
         Me.txtTeam18Password.Name = "txtTeam18Password"
+        Me.txtTeam18Password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtTeam18Password.Size = New System.Drawing.Size(108, 20)
         Me.txtTeam18Password.TabIndex = 14
         '
