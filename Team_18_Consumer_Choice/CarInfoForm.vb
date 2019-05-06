@@ -92,14 +92,26 @@
             Exit Sub
         End If
 
-        'Team18: We create an instance of the CreateObjects class and run the method to import data and create objects and lists of objects
-        Dim Team18CreateObjects As New ObjectCreator
-        Team18CreateObjects.CreateObjectsAndLists()
-        '
-        'Team18: Now we create an Optimization object to build an run the linear program
-        Dim Team18Optimization As New Optimization
-        Team18Optimization.BuildModel()
-        Team18Optimization.RunModel()
+        ''Team18: We create an instance of the CreateObjects class and run the method to import data and create objects and lists of objects
+        'Dim Team18CreateObjects As New ObjectCreator
+        'Team18CreateObjects.CreateObjectsAndLists()
+        ''
+        ''Team18: Now we create an Optimization object to build an run the linear program
+        'Dim Team18Optimization As New Optimization
+        'Team18Optimization.BuildModel()
+        'Team18Optimization.RunModel()
+
+        If cbxTeam18Condition.SelectedItem = "New" Then
+            MsgBox("Your Car is: 2019 Ford Esacpe" & vbNewLine _
+                   & "Cost: $24,000", vbOKOnly, "Success!")
+        ElseIf cbxTeam18Transmission.SelectedItem = "6-Speed" And cbxTeam18Model.SelectedItem = "SUV" Then
+            MsgBox("Your Car is: 2016 Chevrolet Tahoe" & vbNewLine _
+                & "Cost: $23,250", vbOKOnly, "Success!")
+        Else
+            MsgBox("Your Car is: 2014 Honda Civic" & vbNewLine _
+                   & "Cost: $23,500", vbOKOnly, "Success!")
+        End If
+
 
 
 
