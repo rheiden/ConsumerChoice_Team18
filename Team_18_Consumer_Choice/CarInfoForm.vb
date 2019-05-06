@@ -1,6 +1,6 @@
 ﻿Public Class frmTeam18CarInfo
     Private Sub btnTeam18GoBackCarInfo_Click(sender As Object, e As EventArgs) Handles btnTeam18GoBackCarInfo.Click
-        Me.Close()
+        Me.Hide()
         frmTeam18Login.Show()
     End Sub
 

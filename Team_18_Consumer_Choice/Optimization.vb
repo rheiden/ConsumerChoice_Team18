@@ -14,6 +14,7 @@ Public Class Optimization
     Dim objIndex As Integer                         'Team18: variable for the index of our objective function
     Public optimalObj As Single                     'Team18: variable for the optimal objective function value
     Public dvValues(Car.CarList.Count - 1, Goal.GoalList.Count - 1) As Single                       'Team18: creates a list of our decision variables
+    Dim budget As Single = 0                        'Team18: variable for the user budget
     '**************************************************************************************************************************
     Public Sub BuildModel()
         '----------------------------------------------------------------------------------------------------------
@@ -59,11 +60,22 @@ Public Class Optimization
         Next
         '----------------------------------------------------------------------------------------------------------
         'Team18: Budget Constraint
+
+        For Each l As Login In Login.LoginList
+            Dim user = frmTeam18Login.txtTeam18Username.Text
+            Dim pass = frmTeam18Login.txtTeam18Password.Text
+
+
+            If (user = l.UserName And pass = l.Password) Then
+                budget = l.Budget
+            End If
+        Next
+
         constraintKey = "Budget Constraint"                                     'Team18: sets the name of the constraint
         Team18Solver.AddRow(constraintKey, constraintIndex)                     'Team18: adds the row to solver
-        Team18Solver.SetBounds(constraintIndex, 0, CInt(frmTeam18CreateAccount.txtTeam18Budget.Text))     'Team18: sets the bounds for the constraint (0 to budget input by user)
+        Team18Solver.SetBounds(constraintIndex, 0, budget)     'Team18: sets the bounds for the constraint (0 to budget input by user)
         For Each myCar As Car In Car.CarList
-            dvIndex = Team18Solver.GetIndexFromKey(myCar.Make & myCar.Model)    'Team18: sets the index of the DV 
+            dvIndex = Team18Solver.GetIndexFromKey("Car Choice " & myCar.Make & myCar.Model)    'Team18: sets the index of the DV 
             coefficient = myCar.Cost                                            'Team18: sets the coefficient of the constraint
             Team18Solver.SetCoefficient(constraintIndex, dvIndex, coefficient)  'Team18: inputs coefficient of constraint to solver
         Next
