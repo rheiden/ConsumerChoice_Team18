@@ -71,7 +71,8 @@ Public Class ObjectCreator
             With myLogin
                 .ID = myDataSet.Tables(tableName).Rows(rowNumber)("ID")                        'Team18: Setting the ID Property
                 .UserName = myDataSet.Tables(tableName).Rows(rowNumber)("UserName")            'Team18: Setting the UserName Property
-                .Password = myDataSet.Tables(tableName).Rows(rowNumber)("Password")            'Team18: Setting the Password Property                   
+                .Password = myDataSet.Tables(tableName).Rows(rowNumber)("Password")            'Team18: Setting the Password Property
+                .Budget = myDataSet.Tables(tableName).Rows(rowNumber)("Budget")
             End With
             Login.LoginList.Add(myLogin)                                                      'Team18: Adds Login Object to LoginList
         Next
