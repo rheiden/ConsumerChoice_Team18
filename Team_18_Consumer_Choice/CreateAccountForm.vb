@@ -17,20 +17,20 @@
             MessageBox.Show("A password was not entered in the text box. Please try again", "Password Error")
         ElseIf txtTeam18Budget.Text = "" Then
             MessageBox.Show("A budget was not entered in the text box. Please try again", "Budget Error")
+        Else
+            user = txtTeam18NewUsername.Text
+            password = txtTeam18NewPass.Text
+            budget = CSng(txtTeam18Budget.Text)
+
+            Dim l As New Login
+            l.UserName = user
+            l.Password = password
+
+            Login.LoginList.Add(l)
+
+            Me.Close()
+            frmTeam18Login.Show()
         End If
-
-        user = txtTeam18NewUsername.Text
-        password = txtTeam18NewPass.Text
-        budget = CSng(txtTeam18Budget.Text)
-
-        Dim l As New Login
-        l.UserName = user
-        l.Password = password
-
-        Login.LoginList.Add(l)
-
-        Me.Close()
-        frmTeam18Login.Show()
     End Sub
 
     Private Sub btnTeam18ExitNewUser_Click(sender As Object, e As EventArgs) Handles btnTeam18ExitNewUser.Click
